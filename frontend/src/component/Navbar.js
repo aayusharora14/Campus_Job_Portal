@@ -6,6 +6,7 @@ import {
   makeStyles,
 } from "@material-ui/core";
 import { useHistory } from "react-router-dom";
+import logo from "./logofullname.png"; // Import your logo image
 
 import isAuth, { userType } from "../lib/isAuth";
 
@@ -18,6 +19,15 @@ const useStyles = makeStyles((theme) => ({
   },
   title: {
     flexGrow: 1,
+    textAlign: 'center',
+    fontWeight: 'bold',
+  },
+  orangeBackground: {
+    backgroundColor: "orange",
+  },
+  logo: {
+    marginRight: theme.spacing(1), // Adjust margin as needed
+    maxHeight: 40, // Adjust logo height as needed
   },
 }));
 
@@ -31,8 +41,9 @@ const Navbar = (props) => {
   };
 
   return (
-    <AppBar position="fixed">
+    <AppBar position="fixed" className={classes.orangeBackground}>
       <Toolbar>
+        <img src={logo} alt="Logo" className={classes.logo} />
         <Typography variant="h6" className={classes.title}>
           Job Portal
         </Typography>

@@ -21,7 +21,8 @@ import Rating from "@material-ui/lab/Rating";
 import Pagination from "@material-ui/lab/Pagination";
 import axios from "axios";
 import SearchIcon from "@material-ui/icons/Search";
-import FilterListIcon from "@material-ui/icons/FilterList";
+import TuneIcon from "@material-ui/icons/Tune";
+
 import ArrowUpwardIcon from "@material-ui/icons/ArrowUpward";
 import ArrowDownwardIcon from "@material-ui/icons/ArrowDownward";
 
@@ -371,7 +372,7 @@ const FilterPopup = (props) => {
               item
               xs={9}
               justify="space-around"
-              // alignItems="center"
+            // alignItems="center"
             >
               <Grid item>
                 <FormControlLabel
@@ -834,7 +835,7 @@ const MyJobs = (props) => {
           </Grid>
           <Grid item>
             <IconButton onClick={() => setFilterOpen(true)}>
-              <FilterListIcon />
+              <TuneIcon style={{ fontSize: 32 }} />
             </IconButton>
           </Grid>
         </Grid>

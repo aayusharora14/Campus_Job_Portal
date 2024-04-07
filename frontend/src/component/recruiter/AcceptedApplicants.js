@@ -20,7 +20,7 @@ import {
 import { useParams } from "react-router-dom";
 import Rating from "@material-ui/lab/Rating";
 import axios from "axios";
-import FilterListIcon from "@material-ui/icons/FilterList";
+import TuneIcon from "@material-ui/icons/Tune";
 import ArrowUpwardIcon from "@material-ui/icons/ArrowUpward";
 import ArrowDownwardIcon from "@material-ui/icons/ArrowDownward";
 
@@ -780,7 +780,7 @@ const AcceptedApplicants = (props) => {
         </Grid>
         <Grid item>
           <IconButton onClick={() => setFilterOpen(true)}>
-            <FilterListIcon />
+            <TuneIcon style={{ fontSize: 32 }} />
           </IconButton>
         </Grid>
         <Grid

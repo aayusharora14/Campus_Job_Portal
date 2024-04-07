@@ -17,12 +17,18 @@ import { SetPopupContext } from "../App";
 import apiList from "../lib/apiList";
 import isAuth from "../lib/isAuth";
 
+import backgroundImage from "./whitebackground.jpg.webp"; // Import your background image
+
 const useStyles = makeStyles((theme) => ({
   body: {
     padding: "60px 60px",
+    backgroundImage: `url(${backgroundImage})`, // Set background image
+    backgroundSize: 'cover', // Cover the entire container
+    backgroundPosition: 'center', // Center the background image
   },
   inputBox: {
     width: "300px",
+
   },
   submitButton: {
     width: "300px",

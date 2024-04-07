@@ -6,15 +6,14 @@ const cors = require("cors");
 const fs = require("fs");
 
 // MongoDB
-mongoose
-  .connect("mongodb://localhost:27017/jobPortal", {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-    useCreateIndex: true,
-    useFindAndModify: false,
-  })
-  .then((res) => console.log("Connected to DB"))
-  .catch((err) => console.log(err));
+// MongoDB
+mongoose.connect("mongodb://localhost:27017/jobPortal", {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+})
+  .then(() => console.log("Connected to MongoDB"))
+  .catch((err) => console.error("Error connecting to MongoDB:", err));
+
 
 // initialising directories
 if (!fs.existsSync("./public")) {

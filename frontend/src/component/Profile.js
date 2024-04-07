@@ -17,10 +17,15 @@ import FaceIcon from "@material-ui/icons/Face";
 import { SetPopupContext } from "../App";
 
 import apiList from "../lib/apiList";
+import "./common.css";
 
 const useStyles = makeStyles((theme) => ({
   body: {
     height: "inherit",
+    backgroundImage: `url(${require("./whitebackground.jpg.webp")})`, // Importing and setting background image
+    backgroundRepeat: "no-repeat",
+    backgroundSize: "cover",
+
   },
   popupDialog: {
     height: "100%",

@@ -20,7 +20,7 @@ import {
 import { useParams } from "react-router-dom";
 import Rating from "@material-ui/lab/Rating";
 import axios from "axios";
-import FilterListIcon from "@material-ui/icons/FilterList";
+import TuneIcon from "@material-ui/icons/Tune";
 import ArrowUpwardIcon from "@material-ui/icons/ArrowUpward";
 import ArrowDownwardIcon from "@material-ui/icons/ArrowDownward";
 
@@ -80,7 +80,7 @@ const FilterPopup = (props) => {
               item
               xs={9}
               justify="space-around"
-              // alignItems="center"
+            // alignItems="center"
             >
               <Grid item>
                 <FormControlLabel
@@ -579,9 +579,8 @@ const ApplicationTile = (props) => {
             Education:{" "}
             {application.jobApplicant.education
               .map((edu) => {
-                return `${edu.institutionName} (${edu.startYear}-${
-                  edu.endYear ? edu.endYear : "Ongoing"
-                })`;
+                return `${edu.institutionName} (${edu.startYear}-${edu.endYear ? edu.endYear : "Ongoing"
+                  })`;
               })
               .join(", ")}
           </Grid>
@@ -626,7 +625,7 @@ const ApplicationTile = (props) => {
             variant="contained"
             color="primary"
             style={{ padding: "10px 50px" }}
-            // onClick={() => changeRating()}
+          // onClick={() => changeRating()}
           >
             Submit
           </Button>
@@ -739,7 +738,7 @@ const JobApplications = (props) => {
         </Grid>
         <Grid item>
           <IconButton onClick={() => setFilterOpen(true)}>
-            <FilterListIcon />
+            <TuneIcon style={{ fontSize: 32 }} />
           </IconButton>
         </Grid>
         <Grid

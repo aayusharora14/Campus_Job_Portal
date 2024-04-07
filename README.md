@@ -65,3 +65,4 @@ Details of the machine on which the webapp was tested:
 - Processor: Intel Core i7-8750H CPU @ 2.20 GHz 2.21 GHz
 - RAM: 16 GB
 # campus-job-portal
+# campus-job-portal
